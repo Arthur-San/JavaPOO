@@ -1,6 +1,6 @@
-package HerancaEPolimorfismo.Exercicios;
+package HerancaEPolimorfismo.Exercicios.ex01;
 
-public class Veiculo {
+public abstract class Veiculo {
     String marca;
     String modelo;
 
