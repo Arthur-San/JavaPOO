@@ -1,4 +1,4 @@
-package exercicios_01.ex_02;
+package ConceitosBasicos.exercicios_01.ex_02;
 
 public class Animal {
     String nome;

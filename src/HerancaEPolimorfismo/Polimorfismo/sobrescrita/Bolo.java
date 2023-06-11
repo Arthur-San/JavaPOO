@@ -1,4 +1,4 @@
-package POO.Polimorfismo.sobrescrita;
+package HerancaEPolimorfismo.Polimorfismo.sobrescrita;
 
 import java.util.Date;
 

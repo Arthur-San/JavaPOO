@@ -1,3 +1,5 @@
+package HerancaEPolimorfismo.Polimorfismo.sobrecarga;
+
 import java.util.Date;
 
 public class Bolo {
@@ -39,6 +41,14 @@ public class Bolo {
 
     void assarBolo() {
         temperatura += 10;
+    }
+
+    void assarBolo(int temp){
+        temperatura += temp;
+    }
+
+    void assarBolo(int temp, int tempForma){
+        temperatura += temp + tempForma;
     }
 
 

@@ -1,4 +1,4 @@
-package POO.ClassesAbstratas;
+package HerancaEPolimorfismo.ClassesAbstratas;
 
 public class CarroEletrico extends Carro{
 

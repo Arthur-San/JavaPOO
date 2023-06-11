@@ -1,4 +1,4 @@
-package POO.Polimorfismo.sobrecarga;
+package HerancaEPolimorfismo.Polimorfismo.sobrecarga;
 
 public class BoloComCoberturaDeChocolate extends Bolo {
     @Override //opcional

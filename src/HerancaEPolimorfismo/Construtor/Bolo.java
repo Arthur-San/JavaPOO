@@ -1,5 +1,6 @@
-package POO.Polimorfismo.sobrecarga;
+package HerancaEPolimorfismo.Construtor;
 
+import java.util.Arrays;
 import java.util.Date;
 
 public class Bolo {
@@ -11,6 +12,21 @@ public class Bolo {
     float temperatura;
     Date dataDeValidade;
 
+    public Bolo(){
+
+    }
+
+    public Bolo(String nome, float peso){
+        this.nome = nome;
+        this.peso = peso;
+    }
+
+    public Bolo(String nome, float peso, String[] ingredientes, int temperatura){
+        this.nome = nome;
+        this.peso = peso;
+        this.ingredientes = ingredientes;
+        this.temperatura = temperatura;
+    }
 
 
 
@@ -51,5 +67,17 @@ public class Bolo {
         temperatura += temp + tempForma;
     }
 
+
+    @Override
+    public String toString() {
+        return "Bolo{" +
+                "\nnome: " + nome
+                +"\npeso: " + peso +
+                "\ningredientes: " + Arrays.toString(ingredientes) +
+                "\nmodoDePreparo: " + Arrays.toString(modoDePreparo) +
+                "\ntemperatura: " + temperatura +
+                "\ndataDeValidade: " + dataDeValidade +
+                '}';
+    }
 
 }
