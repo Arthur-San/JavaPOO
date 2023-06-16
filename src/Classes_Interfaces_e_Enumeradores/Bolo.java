@@ -70,15 +70,9 @@ public class Bolo extends Object{
 
     @Override
     public String toString() {
-        return "Bolo{" +
-                "\nnome: " + nome
-                +"\npeso: " + peso +
-                "\ningredientes: " + Arrays.toString(ingredientes) +
-                "\nmodoDePreparo: " + Arrays.toString(modoDePreparo) +
-                "\ntemperatura: " + temperatura +
-                "\ndataDeValidade: " + dataDeValidade +
-                '}';
+        return getClass().getName() + ". nome do bolo: " + this.nome;
     }
+
     @Override
     //sobrescrevendo o metodo equals para comparar NOME
     //obs: deverá ser feito um cast de objetc para Bolo ou classe desejada

@@ -11,9 +11,11 @@ public class Main {
         Bolo bolo2 = new Bolo();
         bolo2.nome = "Meu bolo";
 
-        System.out.println(bolo.equals(bolo2) );
+        //System.out.println(bolo.equals(bolo2) );
         //de padrão retorna false, porque a refenencia de bolo é diferente de bolo2
         //após sobrescrever o método equals para comparar NOME ao invés de referência, retorna true caso sejam iguais
 
+        System.out.println(bolo);
+        System.out.println(bolo2);
     }
 }
