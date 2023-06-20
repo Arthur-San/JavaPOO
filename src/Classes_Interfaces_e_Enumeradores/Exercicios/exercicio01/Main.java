@@ -1,4 +1,4 @@
-package Classes_Interfaces_e_Enumeradores.exercicio01;
+package Classes_Interfaces_e_Enumeradores.Exercicios.exercicio01;
 
 import java.util.Scanner;
 

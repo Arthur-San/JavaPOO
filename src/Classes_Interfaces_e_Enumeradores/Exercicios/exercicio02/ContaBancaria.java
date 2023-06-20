@@ -1,4 +1,4 @@
-package Classes_Interfaces_e_Enumeradores.exercicio02;
+package Classes_Interfaces_e_Enumeradores.Exercicios.exercicio02;
 
 public class ContaBancaria implements Sacavel, Depositavel{
     private Integer numeroConta;

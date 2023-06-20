@@ -1,6 +1,4 @@
-package Classes_Interfaces_e_Enumeradores.exercicio01;
-
-import java.util.Objects;
+package Classes_Interfaces_e_Enumeradores.Exercicios.exercicio01;
 
 public class Retangulo {
     private Double altura;
