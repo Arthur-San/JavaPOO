@@ -5,45 +5,50 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-//        Esporte esporte = Esporte.FUTEBOL;
-//        System.out.println(esporte.getTipoEsporte() );
-//
-        System.out.println("Escolha um esporte: ");
 
-        Esporte[] arrayEsportes = Esporte.values();
-        for (Esporte es : arrayEsportes) {
-            System.out.println(es.ordinal() + " " + es.getTipoEsporte());
-        }
-        System.out.print("->");
+        Integer option;
+        do {
+            System.out.println("Escolha um esporte: ");
 
-        int option = sc.nextInt();
-        switch (option){
-            case 0:
-                Esporte esporte = Esporte.FUTEBOL;
-                System.out.println(esporte.getTipoEsporte() );
-                break;
-            case 1:
-                Esporte esporte = Esporte.BASQUETE;
-                System.out.println(esporte.getTipoEsporte() );
-                break;
-            case 2:
-                Esporte esporte = Esporte.NATACAO;
-                System.out.println(esporte.getTipoEsporte() );
-                break;
-            case 3:
-                Esporte esporte = Esporte.JIUJITSU;
-                System.out.println(esporte.getTipoEsporte() );
-                break;
-            case 4:
-                Esporte esporte = Esporte.VOLEI;
-                System.out.println(esporte.getTipoEsporte() );
-                break;
-            case 5:
-                Esporte esporte = Esporte.CROSSFIT;
-                System.out.println(esporte.getTipoEsporte() );
-                break;
-        }
+            Esporte[] arrayEsportes = Esporte.values();
+            for (Esporte es : arrayEsportes) {
+                System.out.println(es.ordinal() + " " + es.getTipoEsporte());
+            }
+            System.out.println("6 Sair");
+            System.out.print("->");
 
+            option = sc.nextInt();
+
+            if (option == 6){
+                break;
+            }
+
+            Esporte esporte = Esporte.values()[option];
+
+            switch (option) {
+                case 0:
+                    System.out.println(esporte + " É TETRAAAAA\n");
+                    break;
+                case 1:
+                    System.out.println(esporte + " só pra quem é alto\n");
+                    break;
+                case 2:
+                    System.out.println(esporte + " Não tem bola\n");
+                    break;
+                case 3:
+                    System.out.println(esporte + " Não tem bola\n");
+                    break;
+                case 4:
+                    System.out.println(esporte + " OLHA O SAQUEEE\n");
+                    break;
+                case 5:
+                    System.out.println(esporte + " coisa de maluco\n");
+                    break;
+            }
+
+
+        } while (option <= 6);
+        System.out.println("Programa encerrado!");
 
     }
 }
